@@ -1,0 +1,42 @@
+es la biblioteca estándar en C++ para poder tener acceso a los dispositivos estándar de entrada y/o salida.
+#include<iostream>
+es el de dar acceso al espacio de nombres (namespace) std, donde se encuentra encerrada toda la librería estándar.
+using namespace std;
+sirve como punto de partida para la ejecución del programa
+int main()
+{
+	
+Números enteros definidos con la palabra clave int. Letras o caracteres definidos
+	int EPM_aa,EPM_ma,EPM_da,EPM_an,EPM_mn,EPM_dn,EPM_a,EPM_m,EPM_d;
+es el flujo de salida estándar que por lo general es la pantalla.	
+cout<<"ingrese la fecha actual :";
+es el flujo de entrada estándar que normalmente es el teclado
+	cin>>EPM_aa>>EPM_ma>>EPM_da;
+es el flujo de salida estándar que por lo general es la pantalla.
+	cout<<"ingrese la fecha de nacimiento :";
+es el flujo de entrada estándar que normalmente es el teclado
+	cin>>EPM_an>>EPM_mn>>EPM_dn;
+es una estructura que nos posibilita definir las acciones a ejecutar si se cumple cierta condición y de ese modo modificar la ejecución de tareas en un programa según se necesite.
+	if(EPM_da>EPM_dn){
+		EPM_d=EPM_da-EMP_dn;
+el cual indica la acción o conjunto de acciones a llevar a cabo, en caso de que la condición del if no se cumpla.
+	}else{
+		EPM_da=EPM_da+30;
+		EPM_ma=EPM_ma-1;
+		EPM_d=EPM_da-EPM_dn;
+	}
+es una estructura que nos posibilita definir las acciones a ejecutar si se cumple cierta condición y de ese modo modificar la ejecución de tareas en un programa según se necesite.	
+ if(EPM_ma>EPM_mn){
+		EPM_m=EPM_ma-EPM_mn;
+el cual indica la acción o conjunto de acciones a llevar a cabo, en caso de que la condición del if no se cumpla.
+	}else{
+		EPM_ma=EPM_ma+12;
+		EPM_aa=EPM_aa-1;
+		EPM_m=EPM_ma-EPM_mn;
+	}
+	EPM_a=EPM_aa-EPM_an;
+	es el flujo de salida estándar que por lo general es la pantalla.
+	cout<<"usted tiene "<<EPM_a<<" años, "<<EPM_m<<" meses, "<<EPM_d<<" dias "<< endl;
+	Finaliza la ejecución de una función y devuelve el control a la función de llamada
+	return 0;
+}
