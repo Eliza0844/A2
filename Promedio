@@ -1,0 +1,19 @@
+#include<iostream>//operaciones de entrada/salida
+using namespace std;//dar acceso al espacio de nombres (namespace) std, donde se encientra encerrada la libreria estandar
+int main()//el punto de inicio de su ejecucion
+{
+	float EPM_x,EPM_pm;//declaracion de variables
+	int EPM_i=0,EPM_l;//declaracion de variables
+	cout<<"Ingrese l: ";//salida de texto en pantalla
+	cin>>EPM_l;//entrada de datos
+	do{//inicio del bucle hacer mientras
+		cout<<"Ingrese x: ";//salida de texto en pantalla
+		cin>>EPM_x;//entrada de datos
+		EPM_i=EPM_i+1;//realizar proceso
+		if(EPM_x>EPM_pm){//inicio del bucle si entonces
+			EPM_pm=EPM_x;//realizar proceso
+		}//fin del bucle si entonces
+	}while(EPM_i<EPM_l);//fin del bucle hacer mientras
+	cout<<"El promedio maximo de el curso fue: "<<EPM_pm<<endl<<endl;//salida de texto en pantalla
+	return 0;//se utiliza para indicar que el programa se ha ejecutado de manera exitosa.
+}
